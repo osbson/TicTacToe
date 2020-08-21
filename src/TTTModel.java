@@ -46,7 +46,7 @@ public class TTTModel {
         } else {
             winner = Mark.CROSS;
         }
-        Alert a = new Alert(Alert.AlertType.NONE, winner.toString() + " wins!", ButtonType.FINISH);
+        Alert a = new Alert(Alert.AlertType.NONE, winner.toString() + " wins! \n(close window after finishing)", ButtonType.FINISH);
         a.setTitle("Game Over");
 
         //check horizontals
@@ -82,7 +82,7 @@ public class TTTModel {
             }
             if (n <= 9) {
                 full = true;
-                Alert b = new Alert(Alert.AlertType.NONE, "Draw!", ButtonType.FINISH);
+                Alert b = new Alert(Alert.AlertType.NONE, "Draw! \n(close window after finishing)", ButtonType.FINISH);
                 b.setTitle("Game Over");
                 //end game & output "DRAW"
             }

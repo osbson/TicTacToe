@@ -4,7 +4,9 @@ import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
@@ -21,9 +23,12 @@ public class TTTFX extends Application {
         launch(args);
     }
 
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         TTTModel game = new TTTModel();
+        Alert start = new Alert(Alert.AlertType.NONE, "X Starts", ButtonType.OK);
+        start.setTitle("Start");
 
         window = primaryStage;
         window.setTitle("Tic Tac Toe");
@@ -60,5 +65,6 @@ public class TTTFX extends Application {
         window.setResizable(false);
         window.setScene(scene);
         window.show();
+        start.show();
     }
 }

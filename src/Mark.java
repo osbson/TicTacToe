@@ -14,8 +14,5 @@ public enum Mark {
             return "O";
         }
     };
-
-    private Mark() {
-    }
-
+    Mark(){}
 }
