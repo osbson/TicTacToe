@@ -1,8 +1,21 @@
 public enum Mark {
-    EMPTY,
-    CROSS,
-    NOUGHT;
+    EMPTY {
+        public String toString(){
+            return "";
+        }
+    },
+    CROSS {
+        public String toString(){
+            return "X";
+        }
+    },
+    NOUGHT {
+        public String toString(){
+            return "O";
+        }
+    };
 
     private Mark() {
     }
+
 }

@@ -1,7 +1,5 @@
-import javafx.scene.Node;
-
-public class TTTSquare extends Node {
-    private Mark mark;
+public class TTTSquare {
+    private Mark mark = Mark.EMPTY;
 
     public Mark getMark() {
         return mark;
