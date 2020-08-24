@@ -1,3 +1,10 @@
+/*
+*
+* Author: Ore Benson
+*
+* */
+
+
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;

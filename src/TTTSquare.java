@@ -1,3 +1,9 @@
+/*
+ *
+ * Author: Ore Benson
+ *
+ * */
+
 public class TTTSquare {
     private Mark mark = Mark.EMPTY;
 
